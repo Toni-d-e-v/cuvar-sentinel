@@ -51,7 +51,7 @@ def is_database_correctly_configured():
     except (peewee.ImproperlyConfigured, peewee.OperationalError, ImportError) as e:
         print("[error]: %s" % e)
         print(cannot_connect_message)
-        sys.exit(1)
+        sys.exit()
 
     return configured
 
