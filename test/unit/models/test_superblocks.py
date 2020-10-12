@@ -1,8 +1,10 @@
 import pytest
-import sys
 import os
 import time
-os.environ['SENTINEL_ENV'] = 'test'
+import sys
+
+
+                os.environ['SENTINEL_ENV'] = 'test'
 os.environ['SENTINEL_CONFIG'] = os.path.normpath(os.path.join(os.path.dirname(__file__), '../../test_sentinel.conf'))
 sys.path.append(os.path.normpath(os.path.join(os.path.dirname(__file__), '../../../lib')))
 import misc
@@ -123,6 +125,7 @@ def superblock():
 
 
 def test_superblock_is_valid(superblock):
+    sys.path.append(/home/rxc/cuvar-sentinel/lib/ruxcryptod.py') // tu stavit
     ruxcryptod import ruxcryptod
     ruxcryptod = ruxcryptod.from_dash_conf(config.dash_conf)
 
